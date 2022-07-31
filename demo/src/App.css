@@ -24,6 +24,10 @@
   color: white;
 }
 
+.board {
+  border: 5px solid blue;
+}
+
 .App-link {
   color: #61dafb;
 }
