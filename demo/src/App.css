@@ -24,8 +24,26 @@
   color: white;
 }
 
-.board {
-  border: 5px solid blue;
+.body {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: column;
+}
+
+.board h2 {
+  text-decoration: 3px solid blue;
+}
+
+.rank-container .rank-table li {
+  border: 2px solid black;
+  margin: 0px 0px 0px 0px;
 }
 
 .App-link {

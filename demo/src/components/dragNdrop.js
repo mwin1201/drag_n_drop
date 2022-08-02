@@ -34,25 +34,33 @@ const DragDrop = () => {
 
     const addImageToBoard = (id) => {
         const picList = pictureList.filter((pic) => id === pic.id);
-        //setBoard((board) => [...board, picList[0]]);
-        setBoard([picList[0]]);
+        setBoard((board) => [...board, picList[0]]);
+        //setBoard([picList[0]]);
     };
 
     return (
-        <>
+        <div className="body">
             <div className="pictures">
                 {pictureList.map((pic) => {
                     return <Picture url={pic.url} id={pic.id} />
                 })}
             </div>
 
+            <div className="rank-container" >
+                <h2>Drag Photos Below</h2>
+                <ol className="rank-table">
+                    <li id="rank1">#1 ----></li>
+                    <li id="rank2">#2 ----></li>
+                    <li id="rank3">#3 ----></li>
+                </ol>
+            </div>
+
             <div className="board" ref={drop}>
-                <p>Drag Photos Here</p>
                 {board.map((item) => {
                     return <Picture url={item.url} id={item.id} />
                 })}
             </div>
-        </>
+        </div>
     )
 };
 

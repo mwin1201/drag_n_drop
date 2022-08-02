@@ -11,8 +11,9 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <DragDrop/>
+          <h1>Rank your F1 Teams</h1>
         </header>
+        <DragDrop/>
       </div>
     </DndProvider>
   );
